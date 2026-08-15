@@ -11,6 +11,19 @@ VisionGuard is an end-to-end Computer Vision platform engineered for industrial 
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. Main Dashboard & System Overview
+![VisionGuard Main Dashboard](<docs/Visionguard main 1.png>)
+
+### 2. Real-Time Detection & Violation Tracking
+![VisionGuard Detection & Tracking](<docs/visionguard 2 .png>)
+
+### 3. Inspection Logs & Analytics View
+![VisionGuard Analytics Logs](<docs/visionguard 3.png>)
+
+---
+
 ## 🚀 Key Capabilities
 
 1. **Object Detection & Instance Segmentation**:
@@ -63,6 +76,7 @@ VisionGuard/
 ├── config.py           # Configuration & color schemes
 ├── requirements.txt    # Project dependencies
 ├── README.md           # Documentation
+├── docs/               # Application screenshots
 ├── core/
 │   ├── detector.py     # YOLOv8 detection & tracking engine
 │   ├── ocr_engine.py   # EasyOCR text recognition
