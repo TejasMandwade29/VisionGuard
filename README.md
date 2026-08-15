@@ -1,4 +1,4 @@
-# 🛡️ VisionGuard v2.0 — Real-Time Industrial Safety, Defect Detection & OCR System
+﻿# VisionGuard v2.0 — Real-Time Industrial Safety, Defect Detection & OCR System
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Object%20Detection%20%26%20Segmentation-00FFFF.svg)](https://docs.ultralytics.com/)
@@ -11,22 +11,22 @@ VisionGuard is an end-to-end Computer Vision platform engineered for industrial 
 
 ---
 
-## 🌟 Key Capabilities
+## 🚀 Key Capabilities
 
-1. **🎯 Object Detection & Instance Segmentation**:
+1. **Object Detection & Instance Segmentation**:
    - Detects workers, safety gear, tools, and industrial machinery.
-   - Extracts pixel-exact **polygon masks** (`YOLOv8-Seg`) for precise defect surface area estimation.
-2. **📍 Multi-Object Tracking (ByteTrack)**:
-   - Assigns persistent **Track IDs** (e.g., `Worker #1`, `Worker #2`) across video frames.
+   - Extracts pixel-exact **polygon masks** (YOLOv8-Seg) for precise defect surface area estimation.
+2. **Multi-Object Tracking (ByteTrack)**:
+   - Assigns persistent **Track IDs** (e.g., Worker #1, Worker #2) across video frames.
    - Prevents duplicate alerts and tracks temporal movement on factory floors.
-3. **📝 OCR Tag & Serial Reader (EasyOCR)**:
+3. **OCR Tag & Serial Reader (EasyOCR)**:
    - Crops bounding box Regions of Interest (ROIs) with OpenCV.
    - Applies adaptive thresholding to extract text from equipment serial tags, warning signs, and worker badges.
-4. **🔬 OpenCV Preprocessing Pipeline**:
+4. **OpenCV Preprocessing Pipeline**:
    - **Gaussian Noise Reduction** filter.
    - **CLAHE (Histogram Equalization)** for dark or uneven factory lighting.
    - **Canny Contour Extraction** to highlight component boundaries and cracks.
-5. **📊 Interactive Streamlit Dashboard**:
+5. **Interactive Streamlit Dashboard**:
    - Image & Video Upload modes.
    - Live FPS counters, latency metrics, and safety alert banners.
    - Interactive detection log dataframe with Track IDs and OCR strings.
@@ -36,37 +36,38 @@ VisionGuard is an end-to-end Computer Vision platform engineered for industrial 
 ## 📝 Resume Bullet Points (100% JD Match)
 
 > **VisionGuard — Real-Time Industrial Safety, Defect Detection & OCR System**  
-> `Python · YOLOv8 · OpenCV · PyTorch · EasyOCR · ByteTrack · Instance Segmentation · Streamlit`
+> Python · YOLOv8 · OpenCV · PyTorch · EasyOCR · ByteTrack · Instance Segmentation · Streamlit
 > * Built a real-time computer vision engine using **YOLOv8** and **OpenCV** to perform object detection, instance segmentation (polygon masking), and multi-object tracking (**ByteTrack**) for industrial safety compliance.
 > * Integrated an **EasyOCR text recognition pipeline** to automatically extract equipment serial numbers and hazard codes from cropped frame ROIs with OpenCV adaptive thresholding.
 > * Implemented custom OpenCV image preprocessing workflows (CLAHE histogram equalization, Gaussian noise filtering, Canny contour extraction) and deployed a **Streamlit analytics dashboard** displaying real-time FPS metrics and violation alerts.
 
 ---
 
-## 🚀 Quick Start Guide
+## ⚡ Quick Start Guide
 
 ### 1. Clone & Navigate
-```bash
+`ash
+git clone https://github.com/TejasMandwade29/VisionGuard.git
 cd VisionGuard
-```
+`
 
 ### 2. Install Dependencies
-```bash
+`ash
 pip install -r requirements.txt
-```
+`
 
 ### 3. Launch Dashboard
-```bash
+`ash
 streamlit run app.py
-```
+`
 
-Access the dashboard at `http://localhost:8501`.
+Access the dashboard at http://localhost:8501.
 
 ---
 
 ## 📁 Project Structure
 
-```
+`
 VisionGuard/
 ├── app.py                    # Streamlit web dashboard & UI controls
 ├── config.py                 # Configuration parameters & color maps
@@ -81,16 +82,16 @@ VisionGuard/
 ├── models/                   # Auto-downloaded model weights (yolov8n.pt, yolov8n-seg.pt)
 └── data/
     └── sample/               # Sample test images
-```
+`
 
 ---
 
-## 🛠️ Feature Comparison Matrix
+## 📊 Feature Comparison Matrix
 
 | Feature | Technology | Industrial Application |
 |---------|------------|------------------------|
 | **Object Detection** | YOLOv8n | Worker & PPE bounding box detection |
 | **Instance Segmentation** | YOLOv8n-Seg | Pixel-accurate defect & machinery polygon masks |
-| **Multi-Object Tracking** | ByteTrack | Unique ID assignment (`Worker #1`) across video streams |
+| **Multi-Object Tracking** | ByteTrack | Unique ID assignment (Worker #1) across video streams |
 | **OCR Text Extraction** | EasyOCR + OpenCV ROI | Reading serial tags & safety signs |
 | **Contrast Enhancement** | OpenCV CLAHE | Equalizing brightness in low-light workshop environments |
