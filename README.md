@@ -57,21 +57,20 @@ Access the dashboard at http://localhost:8501.
 
 ## 📁 Project Structure
 
-`
+`	ext
 VisionGuard/
-├── app.py                    # Streamlit web dashboard & UI controls
-├── config.py                 # Configuration parameters & color maps
-├── requirements.txt          # Dependencies (YOLOv8, OpenCV, EasyOCR, Streamlit)
-├── README.md                 # System documentation
+├── app.py              # Streamlit dashboard UI
+├── config.py           # Configuration & color schemes
+├── requirements.txt    # Project dependencies
+├── README.md           # Documentation
 ├── core/
-│   ├── __init__.py
-│   ├── detector.py           # YOLOv8 Detection, Segmentation & Tracking engine
-│   ├── ocr_engine.py         # EasyOCR text reader for cropped frame ROIs
-│   ├── preprocessor.py       # OpenCV preprocessing (CLAHE, Canny, Blur, Masks)
-│   └── utils.py              # FPS counter, alert rules, dataframe log formatter
-├── models/                   # Auto-downloaded model weights (yolov8n.pt, yolov8n-seg.pt)
+│   ├── detector.py     # YOLOv8 detection & tracking engine
+│   ├── ocr_engine.py   # EasyOCR text recognition
+│   ├── preprocessor.py # OpenCV image preprocessing
+│   └── utils.py        # Helpers, alerts & log formatter
+├── models/             # YOLOv8 weights (.pt files)
 └── data/
-    └── sample/               # Sample test images
+    └── sample/         # Sample test images & videos
 `
 
 ---
