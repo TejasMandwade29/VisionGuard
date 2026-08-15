@@ -33,16 +33,6 @@ VisionGuard is an end-to-end Computer Vision platform engineered for industrial 
 
 ---
 
-## 📝 Resume Bullet Points (100% JD Match)
-
-> **VisionGuard — Real-Time Industrial Safety, Defect Detection & OCR System**  
-> Python · YOLOv8 · OpenCV · PyTorch · EasyOCR · ByteTrack · Instance Segmentation · Streamlit
-> * Built a real-time computer vision engine using **YOLOv8** and **OpenCV** to perform object detection, instance segmentation (polygon masking), and multi-object tracking (**ByteTrack**) for industrial safety compliance.
-> * Integrated an **EasyOCR text recognition pipeline** to automatically extract equipment serial numbers and hazard codes from cropped frame ROIs with OpenCV adaptive thresholding.
-> * Implemented custom OpenCV image preprocessing workflows (CLAHE histogram equalization, Gaussian noise filtering, Canny contour extraction) and deployed a **Streamlit analytics dashboard** displaying real-time FPS metrics and violation alerts.
-
----
-
 ## ⚡ Quick Start Guide
 
 ### 1. Clone & Navigate
@@ -72,7 +62,7 @@ VisionGuard/
 ├── app.py                    # Streamlit web dashboard & UI controls
 ├── config.py                 # Configuration parameters & color maps
 ├── requirements.txt          # Dependencies (YOLOv8, OpenCV, EasyOCR, Streamlit)
-├── README.md                 # System documentation & resume highlights
+├── README.md                 # System documentation
 ├── core/
 │   ├── __init__.py
 │   ├── detector.py           # YOLOv8 Detection, Segmentation & Tracking engine
