@@ -1,6 +1,24 @@
+# Python
 __pycache__/
 *.py[cod]
-.venv/
-.env
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Large Model Weights (Auto-downloaded at runtime)
+*.pt
+models/*.pt
+
+# Streamlit
+.streamlit/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
